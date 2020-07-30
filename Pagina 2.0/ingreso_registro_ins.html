@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/Escudo2.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos_ingreso_institucion.css">
+
+  <title>Ingreso | Institución</title>
+</head>
+<body>
+
+
+    <div class="containerAzul">
+      
+      <div class="col-sm-12 col-md-12">
+       <a href="ingreso_Admin.html"> <img  class="btnsalir" src="img/im3.png"alt="Salir"> </a> 
+      </div>
+  
+
+    </div>
+
+  <!--Contenedor Escudo y módulos-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <center><img class="escudo" src="img/Escudo3.png" alt="Escudo"> </center>
+        <h1 class="titulo1">Institución Educativa Indalecio Vásquez</h1>
+
+      </div>
+    </div>
+
+    
+  </div>
+  <!--/Contenedor escudo y módulos-->
+
+  <!--Barra de navegación-->
+  <div class="ContainerBarra">
+    <nav class="navbar-light bg-light navbar navbar-expand-lg navbar">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="sede.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+
+
+            <li class="nav-item dropdown nav-item active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Años Escolares
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="ano_registro.html">Registrar</a>
+               
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="ano_consulta.html">Consultar</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown nav-item active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Estudiantes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="estudiante_registro.html">Registrar</a>
+               <a class="dropdown-item" href="estudiante_consulta.html">Consultar / Modificar</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="estudiante_lista.html">Listar</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown nav-item active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ingreso Institución
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="ingreso_registro_ins.html">Registrar</a>
+               <a class="dropdown-item" href="ingreso_consult_inst.html">Consultar / Modificar</a>
+ 
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="ingreso_listar_inst.html">Listar</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown nav-item active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ingreso Restaurante
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="ingreso_reg_res.html">Registrar</a>
+               <a class="dropdown-item" href="ingreso_con_res.html">Consultar / Modificar</a>
+ 
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="ingreso_lis_res.html">Listar</a>
+              </div>
+            </li>
+
+ 
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+  <!--/Barra de navegación-->
+
+
+
+  <!--Info registro-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <center><img class="icono-col" src="img/im13.png" alt="Estudiante"> </center>
+        <h3 class="subt2">Formulario Registro de Ingreso a Institución</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Formulario Registro-->
+
+  <center><div class="containerForm">
+      <form action="/action_page.php">
+
+      <div class="row">
+        <div class="col-25">
+          <label for="num_doc">Número de documento:</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="num_doc" name="num_doc" placeholder="">
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="tdoc">Tipo de documento:</label>
+        </div>
+        <div class="col-75">
+          <select id="tdoc" name="tdoc">
+            <option value="TI">TI</option>
+            <option value="CC">CC</option>
+            <option value="CE">CE</option>
+            <option value="RC">RC</option> <!--Registro civil-->
+            <option value="MS">MS</option> <!--Menor sin identificación-->
+          </select>
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-25">
+          <label for="fech_ing_ins">Fecha de Ingreso:</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="fech_ing_ins" name="fech_ing_ins" placeholder="">
+        </div>
+
+      </div>
+
+
+
+       <div class="row">
+        <div class="col-25">
+          <label for="hor_ing_ins">Hora de Ingreso:</label>
+        </div>
+        <div class="col-75">
+          <input type="time" id="hor_ing_ins" name="hor_ing_ins" placeholder="">
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-25">
+          <label for="grado">Grado:</label>
+        </div>
+        <div class="col-75">
+          <select id="grado" name="grado">
+            <option value="Sexto">Sexto</option>
+            <option value="Septimo">Septimo</option>
+            <option value="Octavo">Octavo</option>
+            <option value="Noveno">Noveno</option>
+            <option value="Decimo">Décimo</option>
+            <option value="Once">Once</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="curso">Curso:</label>
+        </div>
+        <div class="col-75">
+          <select id="curso" name="curso">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="estado">Estado:</label>
+        </div>
+        <div class="col-75">
+          <select id="estado" name="estado">
+            <option value="A_tiempo">A tiempo</option>
+            <option value="Retardo">Retardo</option>
+            <option value="No_asistió">No asistió</option>
+          </select>
+        </div>
+      </div>
+
+
+
+      <br>
+      <div class="row">
+         <button type="submit"  class="btn btn-secondary btn-lg btn-block">Registrar</button>
+      </div>
+     
+
+      </form> 
+  </div>
+  </center>
+
+  <!--Formulario Registro-->
+
+ 
+
+
+  <!-- Footer-->
+
+  <footer id="footer">
+
+    <div class="container-footer">
+      <div class="copyright">
+        &copy; Copyright <strong>Institución Educativa Indalecio Vásquez</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        Diseñado por <a href="" >SENA</a> <br>
+
+      </div>
+
+    </div>
+  
+
+  </footer>
+
+  <!-- /Footer-->
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

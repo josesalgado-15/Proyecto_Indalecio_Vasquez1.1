@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/Escudo2.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos_ingreso_institucion.css">
+
+  <title>Listar Ingreso | Institución</title>
+</head>
+<body>
+
+
+    <div class="containerAzul">
+      
+      <div class="col-sm-12 col-md-12">
+       <a href="ingreso_Admin.html"> <img  class="btnsalir" src="img/im3.png"alt="Salir"> </a> 
+      </div>
+  
+
+    </div>
+
+  <!--Contenedor Escudo y módulos-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <center><img class="escudo" src="img/Escudo3.png" alt="Escudo"> </center>
+        <h1 class="titulo1">Institución Educativa Indalecio Vásquez</h1>
+
+      </div>
+    </div>
+
+    
+  </div>
+  <!--/Contenedor escudo y módulos-->
+
+<!--Barra de navegación-->
+  <div class="ContainerBarra">
+    <nav class="navbar-light bg-light navbar navbar-expand-lg navbar">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="sede_est.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+
+
+            <li class="nav-item dropdown nav-item active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Estudiantes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+               <a class="dropdown-item" href="mod_Est_cons.html">Consultar / Modificar</a>
+          
+          
+              </div>
+            </li>
+
+            <li class="nav-item dropdown nav-item active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ingreso Institución
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+               <a class="dropdown-item" href="mod_ing_con.html">Consultar</a>
+              
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="mod_ing_list.html">Listar</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown nav-item active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ingreso Restaurante
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+               <a class="dropdown-item" href="mod_res_con.html">Consultar</a>
+              
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="mod_res_lis.html">Listar</a>
+              </div>
+            </li>
+
+ 
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+  <!--/Barra de navegación-->
+
+
+
+ <!--Info busqueda-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <center><img class="icono-col" src="img/im13.png" alt="Estudiante"> </center>
+        <h3 class="subt2"> Registros de Ingresos del estudiantes</h3>
+      </div>
+    </div>
+
+  </div>
+  <!--Info busqueda-->
+
+
+  <!--Formulario busqueda-->
+  <center><div class="containerFormBus">
+  <br>
+    <form>
+      <div class="form-group">
+      <center><label >Listar por mes </label> </center>
+      <div class="row">
+        <div class="col-25">
+          <label for="ano">Año:</label>
+        </div>
+        <div class="col-75">
+          <select id="ano" name="ano">
+             <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+          </select>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="mes">Mes:</label>
+        </div>
+        <div class="col-75">
+          <select id="mes" name="mes">
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="grado">Grado:</label>
+        </div>
+        <div class="col-75">
+          <select id="grado" name="grado">
+            <option value="Sexto">Sexto</option>
+            <option value="Septimo">Septimo</option>
+            <option value="Octavo">Octavo</option>
+            <option value="Noveno">Noveno</option>
+            <option value="Decimo">Décimo</option>
+            <option value="Once">Once</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="curso">Curso:</label>
+        </div>
+        <div class="col-75">
+          <select id="curso" name="curso">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+        </div>
+      </div>
+      </div>
+
+        <div class="row">
+         <button type="submit"  class="btn btn-secondary btn-lg btn-block">Buscar</button>
+      </div>
+    </form>
+  </div>
+  </center>
+
+
+  <!--Tabla-->
+  <center>
+  <div class="containertabl"> 
+
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="subt2">Sexto / A</h3>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Dia</th>
+                            <th scope="col">Fecha y Hora</th>
+                            <th scope="col">Estado</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>1</td>
+                            <td>1/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>2</td>
+                            <td>2/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>3</td>
+                            <td>3/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>4</td>
+                            <td>4/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>5</td>
+                            <td>5/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>6</td>
+                            <td>6/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>7</td>
+                            <td>7/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>8</td>
+                            <td>8/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>9</td>
+                            <td>9/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>10</td>
+                            <td>10/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>11</td>
+                            <td>11/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>12</td>
+                            <td>12/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>13</td>
+                            <td>13/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>14</td>
+                            <td>14/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>15</td>
+                            <td>15/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>16</td>
+                            <td>16/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>17</td>
+                            <td>17/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>18</td>
+                            <td>18/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>19</td>
+                            <td>19/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>20</td>
+                            <td>20/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>21</td>
+                            <td>21/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>22</td>
+                            <td>22/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>23</td>
+                            <td>23/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>24</td>
+                            <td>24/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>25</td>
+                            <td>25/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>26</td>
+                            <td>26/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>27</td>
+                            <td>27/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>28</td>
+                            <td>28/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>29</td>
+                            <td>29/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>30</td>
+                            <td>30/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                           <tr>
+                            <th scope="row">3</th>
+                            <td>ACUÑA LOPEZ</td>
+                            <td>KAROL JULIANA</td>
+                            <td>31</td>
+                            <td>31/07/2020 06:45 a.m.</td>
+                            <td>A tiempo</td>
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+
+                          <!--Opciones-->
+
+                            <div class="container">
+                              <div class="row">
+
+                                <div class="col-sm-6 col-md-6">
+                                  <center> <a href="#"><img class="icono" src="img/im12.png" alt="Estudiante"> </a> </center>
+                                  <h3 class="subt2"><a href="#" class="nav-link">  Guardar  </a></h3>
+                                </div>
+
+                                <div class="col-sm-6 col-md-6">
+                                  <center> <a href="#"><img class="icono" src="img/im11.png" alt="Estudiante"> </a> </center>
+                                  <h3 class="subt2"><a href="#" class="nav-link">  Imprimir  </a></h3>
+                                </div>
+                              </div>
+
+                            </div>
+                            <!--/Opciones-->
+
+                            
+                      <hr class="my-4">
+                                        
+        </div>
+  </center>
+
+    <!--/Tabla-->
+
+
+
+  </div>
+
+ 
+
+
+  <!-- Footer-->
+
+  <footer id="footer">
+
+    <div class="container-footer">
+      <div class="copyright">
+        &copy; Copyright <strong>Institución Educativa Indalecio Vásquez</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        Diseñado por <a href="" >SENA</a> <br>
+
+      </div>
+
+    </div>
+  
+
+  </footer>
+
+  <!-- /Footer-->
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

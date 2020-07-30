@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/Escudo2.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos_ingreso_Admin.css">
+
+  <title>Ingreso | Administrador</title>
+</head>
+<body>
+
+
+    <div class="containerAzul">
+      
+      <div class="col-sm-12 col-md-12">
+       
+      </div>
+  
+
+    </div>
+
+
+    <div class="container-card">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+
+          <div class="card card-signin flex-row my-5">
+
+            <div class="card-img-left d-none d-md-flex">
+     <!-- Background image for card set in CSS! -->
+     <img class="admin" src="img/im9.png" alt="admin" loading="lazy">
+
+            </div>
+            <div class="card-body">
+              <h1 class="card-title text-center titulo1">Institución Educativa Indalecio Vásquez  <br> <br>  <img class="escudo" src="img/Escudo.jpg" alt="Escudo" loading="lazy"> </h1>
+              <h2 class="card-title text-center subt2">Administrador </h2>
+               <script>
+
+                    function usrpas()
+                    {
+
+                    if (document.form1.txt.value=="admin" && document.form1.num.value=="12345"){window.location="sede.html"}
+
+                    else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+
+                    }
+
+                    document.oncontextmenu=new Function("return false");
+
+                    </script>
+
+                    <form name="form1">
+                        </p><p align="center" class="titulo1">Usuario 
+                        <p align="center"><input type="text" name="txt" size="40" > 
+                        </p><p align="center" class="titulo1">Contraseña
+                        <p align="center"><input type="password" name="num" size="40">  
+                    </form>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="usrpas()">Ingresar</button>
+                
+                    <a class="d-block text-center mt-2 small" href="admin_olv_con.html">Olvidé mi contraseña</a>
+                    <hr class="my-4">
+                    
+                    <!--Ingreso borrador-->
+                    <a href="sede.html" class="nav-link">  <div class="row">
+                      <button class="btn btn-secondary btn-lg btn-block">Ingreso Borrador</button> 
+                    </div></a> 
+                    <a href="index.html" class="nav-link">  <div class="row">
+                      <button class="btn btn-secondary btn-lg btn-block">Ir a página principal</button> 
+                    </div></a> 
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Footer-->
+
+  <footer id="footer">
+
+    <div class="container-footer">
+      <div class="copyright">
+        &copy; Copyright <strong>Institución Educativa Indalecio Vásquez</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        Diseñado por <a href="" >SENA</a> <br>
+
+      </div>
+
+    </div>
+  
+
+  </footer>
+
+  <!-- /Footer-->
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
